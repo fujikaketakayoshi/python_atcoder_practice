@@ -23,7 +23,9 @@ for w in range(MAX_W + 1):
             g += 1
         grundy[w][b] = g
 
-print(grundy)
+# print(grundy[0])
+
+print([g % 3 for g in grundy[0][:64]])
 
 xor_sum = 0
 for i in range(N):
