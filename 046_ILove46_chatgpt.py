@@ -18,7 +18,8 @@ Ccounter = Counter(Cmod)
 cnt = 0
 for a, cnt_a in Acounter.items():
     for b, cnt_b in Bcounter.items():
-        need = (46 - (a + b) % 46) % 46   # ← ★ここが修正点
+        tmp = 46 - (a + b) % 46
+        need = 0 if tmp == 46 else tmp
         cnt += cnt_a * cnt_b * Ccounter[need]
 
 print(cnt)
