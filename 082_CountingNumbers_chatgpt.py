@@ -10,6 +10,7 @@ def f(L, R):
     for k in range(1, 19):
         lo = max(L, 10**(k-1))
         hi = min(R, 10**k - 1)
+        print(lo, hi, k)
         if lo > hi:
             continue
         n = hi - lo + 1
