@@ -1,4 +1,5 @@
-K = int(input())
+#K = int(input())
+K = 64
 ans = 0
 
 a = 1
